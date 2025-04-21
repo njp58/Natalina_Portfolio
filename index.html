@@ -94,6 +94,20 @@
       font-size: 1.1rem;
     }
 
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding-top: 20px;
+    }
+
+    .photo-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
     @keyframes fadeInDown {
       from {
         opacity: 0;
@@ -259,22 +273,18 @@
     <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; margin-top: 20px;">
       <div style="flex: 2; ">
         <p>
-          Over the summer, I had the incredible opportunity of interning with the Hawaiian Airlines mobile team.
-          During this internship, I independently implemented the new "Share My Trip" feature for the Hawaiian Airlines
-          mobile app.
-          This new feature is now live in production for both iOS and Android users! With "Share My Trip," guests can
-          effortlessly share
-          their travel details with family and friends, keeping loved ones informed and engaged throughout their
-          journey. This enhancement
-          not only adds a layer of convenience but also helps ensure peace of mind for travelers and their families.
+          During my senior year, I was admitted into the Cornell Engineering Leadership Certificaiton Program. This
+          year-long program is designed to teach engineering students
+          fundamental leadership skills through interactive workshops and self-disocvery. During this program, my group
+          and I implemented a semester-long Mastermind Circles Program. As leaders
+          of the program, we designed weekly meetings to aid participants in learning valuable tools and achieving their
+          respective goals. The mission of this program was to aid students in achieving their goals
+          by working together to ideate new methods and maintain accountability for achieving our individualized goals.
         </p>
       </div>
       <div style="flex: 1; text-align: right; max-width: 300px; width: 100%; border-radius: 12px;">
-        <video autoplay muted loop playsinline
-          style="max-width: 300px; max-height: 400px; width: 100%; border-radius: 12px;">
-          <source src="ShareMyTripDemo.MP4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <img src="Engineering-Leadership-Ropes-Course-104.jpeg"
+          style="max-width: 300px; width: 100%; border-radius: 12px;">
       </div>
     </div>
     <p style="font-size:2em ; text-align: right;">
@@ -282,20 +292,17 @@
     </p>
     <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; margin-top: 20px;">
       <div style="flex: 1; max-width: 300px; width: 100%; border-radius: 12px;">
-        <a href="https://cornelldebut.org/2023" target="_blank">
-          <img src="BPLP.JPG" style="max-width: 300px; width: 100%; border-radius: 12px;">
-        </a>
+        <img src="DEBUT_Head_Shot.jpg" style="max-width: 300px; width: 100%; border-radius: 12px;">
       </div>
       <div style="flex: 2; text-align: right">
         <p>
-          Working on DEBUT, my project team, to combat phantom limb pain, we developed a responsive embedded system that
-          detects the
-          motion phase of an amputated limb during walking and delivers targeted electrical stimulation through a TENS
-          unit at key pain-triggering moments. Using a gyroscope to pinpoint the high-load phase, the device
-          continuously tracks the limb's motion cycle.
-          When the limb reaches the midpoint of the walking cycle, a gentle ecltrical pulse is delivered via the TENS
-          device to interfere with the pain. This stimulation acts as a neural distration, reducing the perception of
-          pain. For more information, please click on the image.
+          For 3 semesters, I was a subteam ledd for DEBUT, a Cornell Engineering project team dedicated to designing
+          novel biomedical devices targeted towards underrepresented communities. I planned meeting agendas, led
+          productive meetings, and helped manage the team's progress throughout our ideation and initial prototyping
+          phases. Under my leadership, my team and I designed a self-automated postpartum hemorrhage device that would
+          vary in applied abdominal pressure according to live readings of blood loss recorded by a flow rate sensor. I
+          aided
+          in the design process and implementation of this embedded system.
         </p>
       </div>
     </div>
@@ -304,19 +311,40 @@
   <!-- Photos Section -->
   <section id="photos">
     <h2>Photos</h2>
-    <p>
-      #Todo
-    </p>
+    <div class="photo-grid">
+      <img src="Cornell.JPG" alt="Photo 1">
+      <img src="Maui.JPG" alt="Photo 2">
+      <img src="NewMexico.JPG" alt="Photo 3">
+      <img src="Spin.JPG" alt="Photo 4">
+      <img src="Arizona.JPG" alt="Photo 5">
+      <img src="MudRun.JPG" alt="Photo 6">
+      <img src="theater.jpg" alt="Photo 7">
+      <img src="dance_portfolio.jpg" alt="Photo 8">
+    </div>
   </section>
 
   <!-- Handles Section -->
   <section id="contactme">
     <h2>Contact Me</h2>
-    <p>
-      GitHub: <br />
-      LinkedIn: <a href="https://www.linkedin.com/in/natalina-putrino-9843b2252/" target="_blank">Natalina
-        Putrino</a><br />
-    </p>
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; margin-top: 20px;">
+      <div style="flex: 1; max-width: 300px; width: 100%; border-radius: 12px;">
+        <img src="ContactMe.JPG" style="max-width: 300px; width: 100%; border-radius: 12px;">
+      </div>
+      <div style="flex: 2; text-align: left">
+        <p>
+          GitHub: <a href="https://github.com/njp58" target="_blank">Natalina</a><br />
+          <br>
+          <br>
+          LinkedIn: <a href="https://www.linkedin.com/in/natalina-putrino-9843b2252/" target="_blank">Natalina</a><br />
+          <br>
+          <br>
+          Resume: <a href="Natalina.Putrino.Resume (5).pdf" target="_blank">Natalina</a><br />
+          <br>
+          <br>
+          Instagram: <a href="https://www.instagram.com/lifewnatalina/" target="_blank">@lifewnatalina</a><br />
+        </p>
+      </div>
+    </div>
   </section>
 
 </body>
