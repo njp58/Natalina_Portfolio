@@ -14,7 +14,7 @@
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Optima', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #f5f5f5;
       color: #333;
     }
@@ -23,17 +23,18 @@
     nav {
       position: sticky;
       top: 0;
-      background: linear-gradient(135deg, #d62bc8, #b319ab);
+      background-color: rgba(245, 245, 245, 0.6);
       padding: 1rem 2rem;
       display: flex;
       justify-content: center;
-      gap: 2rem;
+      gap: 4rem;
       z-index: 1000;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px);
     }
 
     nav a {
-      color: white;
+      color: black;
       text-decoration: none;
       font-weight: bold;
       transition: color 0.3s ease;
@@ -45,7 +46,10 @@
 
     header {
       height: 100vh;
-      background: linear-gradient(135deg, #d62bc8, #b319ab);
+      background-image: url('Natalina_Portfolio.jpg');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
       color: white;
       display: flex;
       flex-direction: column;
@@ -134,9 +138,10 @@
   <nav>
     <a href="#home">Home</a>
     <a href="#about">About Me</a>
-    <a href="#projects">Projects</a>
+    <a href="#softwareengineering">Software Engineering</a>
+    <a href="#leadership">Leadership</a>
     <a href="#photos">Photos</a>
-    <a href="#handles">Handles</a>
+    <a href="#contactme">Contact Me</a>
   </nav>
 
   <!-- Hero / Home Section -->
@@ -149,19 +154,151 @@
   </header>
 
   <!-- About Me Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      #Todo
+  <section id="about" style="padding: 40px; font-family: 'Optima', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <h2 style="text-align: center;">About Me</h2>
+    <p style="font-size:3em ;">
+      Work Hard
     </p>
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; margin-top: 20px;">
+      <div style="flex: 2; ">
+        <p>
+          I am currently a senior pursuing a Bachelor of Science degree in Computer Science at Cornell University.
+          I primarily focus on front-end and mobile app development, although I have had experience developing embedded
+          systems using Arduino for real-time data processing for hard-ware based applications. My main reaason for
+          pursuing
+          a
+          degree in tech was because I loved the flexibility and enjoy blending my avid creativity with my love for
+          coding.
+          I am also
+          a proud woman in STEM and believe that you can pursue any degree, no matter what!
+        </p>
+      </div>
+      <div style="flex: 1; text-align: right; max-width: 300px; width: 100%; border-radius: 12px;">
+        <img src="WorkHardPic.jpg" style="max-width: 300px; width: 100%; border-radius: 12px;">
+      </div>
+    </div>
+    <p style="font-size:3em ; text-align: right;">
+      Play Harder
+    </p>
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; margin-top: 20px;">
+      <div style="flex: 1; max-width: 300px; width: 100%; border-radius: 12px;">
+        <img src="PlayHarderPic.JPG" style="max-width: 300px; width: 100%; border-radius: 12px;">
+      </div>
+      <div style="flex: 2; text-align: right">
+        <p>
+          In addition to Computer Science, I am pursuing a career in fitness entrepeneuriship and content creation.
+          My brand's primary focus is in promoting fitness and wellness through nature and adventures. Whether it is
+          camping,
+          chasing waterfalls, training for Mud Runs, or finding hidden gems, I love being outside and want to encourage
+          others to find
+          healing and fun in nature! Additionally, as for hobbies, I love the fine arts, with experience in dance and
+          theater! You can truly
+          do it all, and that is what my page will show you!
+        </p>
+      </div>
+    </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <p>
-      #Todo
+  <!-- Software Section -->
+  <section id="softwareengineering">
+    <h2>Software Engineering</h2>
+    <p style="font-size:3em ;">
+      Hawaiian Airlines: Share My Trip
     </p>
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; margin-top: 20px;">
+      <div style="flex: 2; ">
+        <p>
+          Over the summer, I had the incredible opportunity of interning with the Hawaiian Airlines mobile team.
+          During this internship, I independently implemented the new "Share My Trip" feature for the Hawaiian Airlines
+          mobile app.
+          This new feature is now live in production for both iOS and Android users! With "Share My Trip," guests can
+          effortlessly share
+          their travel details with family and friends, keeping loved ones informed and engaged throughout their
+          journey. This enhancement
+          not only adds a layer of convenience but also helps ensure peace of mind for travelers and their families.
+        </p>
+      </div>
+      <div style="flex: 1; text-align: right; max-width: 300px; width: 100%; border-radius: 12px;">
+        <video autoplay muted loop playsinline
+          style="max-width: 300px; max-height: 400px; width: 100%; border-radius: 12px;">
+          <source src="ShareMyTripDemo.MP4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <p style="font-size:3em ; text-align: right;">
+      DEBUT: Block Phantom Limb Pain
+    </p>
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; margin-top: 20px;">
+      <div style="flex: 1; max-width: 300px; width: 100%; border-radius: 12px;">
+        <a href="https://cornelldebut.org/2023" target="_blank">
+          <img src="BPLP.JPG" style="max-width: 300px; width: 100%; border-radius: 12px;">
+        </a>
+      </div>
+      <div style="flex: 2; text-align: right">
+        <p>
+          Working on DEBUT, my project team, to combat phantom limb pain, we developed a responsive embedded system that
+          detects the
+          motion phase of an amputated limb during walking and delivers targeted electrical stimulation through a TENS
+          unit at key pain-triggering moments. Using a gyroscope to pinpoint the high-load phase, the device
+          continuously tracks the limb's motion cycle.
+          When the limb reaches the midpoint of the walking cycle, a gentle ecltrical pulse is delivered via the TENS
+          device to interfere with the pain. This stimulation acts as a neural distration, reducing the perception of
+          pain. For more information, please click on the image.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership Section -->
+  <section id="leadership">
+    <h2>Leadership</h2>
+    <p style="font-size:2em ;">
+      Cornell Engineering Leadership Certification Program
+    </p>
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; margin-top: 20px;">
+      <div style="flex: 2; ">
+        <p>
+          Over the summer, I had the incredible opportunity of interning with the Hawaiian Airlines mobile team.
+          During this internship, I independently implemented the new "Share My Trip" feature for the Hawaiian Airlines
+          mobile app.
+          This new feature is now live in production for both iOS and Android users! With "Share My Trip," guests can
+          effortlessly share
+          their travel details with family and friends, keeping loved ones informed and engaged throughout their
+          journey. This enhancement
+          not only adds a layer of convenience but also helps ensure peace of mind for travelers and their families.
+        </p>
+      </div>
+      <div style="flex: 1; text-align: right; max-width: 300px; width: 100%; border-radius: 12px;">
+        <video autoplay muted loop playsinline
+          style="max-width: 300px; max-height: 400px; width: 100%; border-radius: 12px;">
+          <source src="ShareMyTripDemo.MP4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <p style="font-size:2em ; text-align: right;">
+      DEBUT Subteam Lead
+    </p>
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; margin-top: 20px;">
+      <div style="flex: 1; max-width: 300px; width: 100%; border-radius: 12px;">
+        <a href="https://cornelldebut.org/2023" target="_blank">
+          <img src="BPLP.JPG" style="max-width: 300px; width: 100%; border-radius: 12px;">
+        </a>
+      </div>
+      <div style="flex: 2; text-align: right">
+        <p>
+          Working on DEBUT, my project team, to combat phantom limb pain, we developed a responsive embedded system that
+          detects the
+          motion phase of an amputated limb during walking and delivers targeted electrical stimulation through a TENS
+          unit at key pain-triggering moments. Using a gyroscope to pinpoint the high-load phase, the device
+          continuously tracks the limb's motion cycle.
+          When the limb reaches the midpoint of the walking cycle, a gentle ecltrical pulse is delivered via the TENS
+          device to interfere with the pain. This stimulation acts as a neural distration, reducing the perception of
+          pain. For more information, please click on the image.
+        </p>
+      </div>
+    </div>
   </section>
 
   <!-- Photos Section -->
@@ -173,8 +310,8 @@
   </section>
 
   <!-- Handles Section -->
-  <section id="handles">
-    <h2>Find Me Online</h2>
+  <section id="contactme">
+    <h2>Contact Me</h2>
     <p>
       GitHub: <br />
       LinkedIn: <a href="https://www.linkedin.com/in/natalina-putrino-9843b2252/" target="_blank">Natalina
