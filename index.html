@@ -103,10 +103,92 @@
 
     .photo-grid img {
       width: 100%;
-      height: auto;
+      height: 300px;
       border-radius: 12px;
       object-fit: cover;
     }
+
+    .photo-wrapper {
+      position: relative;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .photo-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 12px;
+    }
+
+    /* Overlay text block */
+    .photo-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 16px;
+      background: rgba(0, 0, 0, 0.6);
+      /* semi-transparent black */
+      color: #fff;
+      font-family: 'Optima', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 1rem;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+    }
+
+    /* Show text on hover */
+    .photo-wrapper:hover .photo-overlay {
+      opacity: 1;
+    }
+
+    .tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .tech-tag {
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.9em;
+      font-weight: bold;
+      color: white;
+      font-family: 'Optima', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .tech-python {
+      background-color: #06bd4b;
+    }
+
+    .tech-maui {
+      background-color: #3572A5;
+    }
+
+    .tech-cplusplplus {
+      background-color: #61dafb;
+      color: #000;
+    }
+
+    .tech-swift {
+      background-color: #f05138;
+    }
+
+    .tech-swiftui {
+      background-color: #FFCA28;
+      color: #000;
+    }
+
+    .tech-arduinoide {
+      background-color: #00979D;
+    }
+
 
     @keyframes fadeInDown {
       from {
@@ -178,7 +260,7 @@
         <p>
           I am currently a senior pursuing a Bachelor of Science degree in Computer Science at Cornell University.
           I primarily focus on front-end and mobile app development, although I have had experience developing embedded
-          systems using Arduino for real-time data processing for hard-ware based applications. My main reaason for
+          systems using Arduino for real-time data processing for hard-ware based applications. My main reason for
           pursuing
           a
           degree in tech was because I loved the flexibility and enjoy blending my avid creativity with my love for
@@ -231,6 +313,12 @@
           journey. This enhancement
           not only adds a layer of convenience but also helps ensure peace of mind for travelers and their families.
         </p>
+        <div class="tech-tags">
+          <span class="tech-tag tech-swift">Swift</span>
+          <span class="tech-tag tech-swiftui">SwiftUI</span>
+          <span class="tech-tag tech-maui">.NET MAUI</span>
+          <span class="tech-tag tech-cplusplplus">C++</span>
+        </div>
       </div>
       <div style="flex: 1; text-align: right; max-width: 300px; width: 100%; border-radius: 12px;">
         <video autoplay muted loop playsinline
@@ -251,15 +339,37 @@
       </div>
       <div style="flex: 2; text-align: right">
         <p>
-          Working on DEBUT, my project team, to combat phantom limb pain, we developed a responsive embedded system that
+          Working on DEBUT, my project team, we developed a responsive embedded system that
           detects the
           motion phase of an amputated limb during walking and delivers targeted electrical stimulation through a TENS
-          unit at key pain-triggering moments. Using a gyroscope to pinpoint the high-load phase, the device
+          unit at key pain-triggering moments to combat phantom limb pain. Using a gyroscope to pinpoint the high-load
+          phase, the device
           continuously tracks the limb's motion cycle.
-          When the limb reaches the midpoint of the walking cycle, a gentle ecltrical pulse is delivered via the TENS
+          When the limb reaches the midpoint of the walking cycle, a gentle electrical pulse is delivered via the TENS
           device to interfere with the pain. This stimulation acts as a neural distration, reducing the perception of
           pain. For more information, please click on the image.
         </p>
+        <div class="tech-tags">
+          <span class="tech-tag tech-arduinoide">ArduinoIDE</span>
+          <span class="tech-tag tech-cplusplplus">C++</span>
+        </div>
+      </div>
+    </div>
+    <p style="font-size:3em ;">
+      DEBUT: HemBrace
+    </p>
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; margin-top: 20px;">
+      <div style="flex: 2; ">
+        <p>
+
+        </p>
+        <div class="tech-tags">
+          <span class="tech-tag tech-arduinoide">ArduinoIDE</span>
+          <span class="tech-tag tech-cplusplplus">C++</span>
+        </div>
+      </div>
+      <div style="flex: 1; text-align: right; max-width: 300px; width: 100%; border-radius: 12px;">
+        <img src="PlayHarderPic.JPG" style="max-width: 300px; width: 100%; border-radius: 12px;">
       </div>
     </div>
   </section>
@@ -306,20 +416,94 @@
         </p>
       </div>
     </div>
+    <p style="font-size:2em ;">
+      Assorted Aces Dance Choreographer
+    </p>
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; margin-top: 20px;">
+      <div style="flex: 2; ">
+        <p>
+
+        </p>
+      </div>
+      <div style="flex: 1; text-align: right; max-width: 300px; width: 100%; border-radius: 12px;">
+        <img src="PlayHarderPic.JPG" style="max-width: 300px; width: 100%; border-radius: 12px;">
+      </div>
+    </div>
   </section>
 
   <!-- Photos Section -->
   <section id="photos">
     <h2>Photos</h2>
     <div class="photo-grid">
-      <img src="Cornell.JPG" alt="Photo 1">
-      <img src="Maui.JPG" alt="Photo 2">
-      <img src="NewMexico.JPG" alt="Photo 3">
-      <img src="Spin.JPG" alt="Photo 4">
-      <img src="Arizona.JPG" alt="Photo 5">
-      <img src="MudRun.JPG" alt="Photo 6">
-      <img src="theater.jpg" alt="Photo 7">
-      <img src="dance_portfolio.jpg" alt="Photo 8">
+
+      <div class="photo-wrapper">
+        <img src="FromAZ.JPG" alt="Photo 9">
+        <div class="photo-overlay">My hometown roots run deep in the Arizona desert.
+        </div>
+      </div>
+
+      <div class="photo-wrapper">
+        <img src="Ranch.JPG" alt="Photo 10">
+        <div class="photo-overlay">I grew up on a ranch, where the seeds of my work ethic were first sown.
+        </div>
+      </div>
+
+      <div class="photo-wrapper">
+        <img src="Cornell.JPG" alt="Photo 1">
+        <div class="photo-overlay">I graduated Cornell University with a B.S. in Computer Science.</div>
+      </div>
+
+      <div class="photo-wrapper">
+        <img src="Maui.JPG" alt="Photo 2">
+        <div class="photo-overlay">I love traveling and exploring different countries and cultures.</div>
+      </div>
+
+      <div class="photo-wrapper">
+        <img src="ContentCreatorFinal.JPG" alt="Photo 12">
+        <div class="photo-overlay">Through content creation, I am shaping a personal brand that reflects my love for
+          mind-body health, exploration, and intentional living.
+        </div>
+      </div>
+
+      <div class="photo-wrapper">
+        <img src="NewMexico.JPG" alt="Photo 3">
+        <div class="photo-overlay">I strongly value and promote wellness and a balanced lifestyle. </div>
+      </div>
+
+      <div class="photo-wrapper">
+        <img src="Spin.JPG" alt="Photo 4">
+        <div class="photo-overlay">Blending entrepeneuriship with intention, I aim to develop my own fitness business
+          centered on whole-person wellness. </div>
+      </div>
+
+      <div class="photo-wrapper">
+        <img src="Arizona.JPG" alt="Photo 5">
+        <div class="photo-overlay">I love exploring hidden gems and going on outdoor adventures. </div>
+      </div>
+
+      <div class="photo-wrapper">
+        <img src="theater.jpg" alt="Photo 7">
+        <div class="photo-overlay">Acting has always been a creative outlet for me that I am actively still pursuing.
+        </div>
+      </div>
+
+      <div class="photo-wrapper">
+        <img src="MudRun.JPG" alt="Photo 6">
+        <div class="photo-overlay">I am always up for a challenge, including 15K Mud Runs. </div>
+      </div>
+
+      <div class="photo-wrapper">
+        <img src="EngineeringLeadershipProgram.JPEG" alt="Photo 11">
+        <div class="photo-overlay">Leadership has been a defining part of my personal and professional growth.
+        </div>
+      </div>
+
+      <div class="photo-wrapper">
+        <img src="dance_portfolio.jpg" alt="Photo 8">
+        <div class="photo-overlay">Whether it's in my room or on stage, dance is another passion I am also pursuing.
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -328,7 +512,7 @@
     <h2>Contact Me</h2>
     <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; margin-top: 20px;">
       <div style="flex: 1; max-width: 300px; width: 100%; border-radius: 12px;">
-        <img src="ContactMe.JPG" style="max-width: 300px; width: 100%; border-radius: 12px;">
+        <img src="ContactMePersonal.JPG" style="max-width: 300px; width: 100%; border-radius: 12px;">
       </div>
       <div style="flex: 2; text-align: left">
         <p>
